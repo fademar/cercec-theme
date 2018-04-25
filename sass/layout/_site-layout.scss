@@ -1,0 +1,16 @@
+.site-header {
+	z-index: 800;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    padding-top: 40px;
+    text-align: center;
+}
+
+.site-content {
+	padding-left: 250px;
+}
