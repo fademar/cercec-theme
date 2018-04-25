@@ -698,12 +698,17 @@ a:hover, a:active {
 /* line 1, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   width: 100%;
+  height: 100%;
 }
 
-/* line 7, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+/* line 12, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -711,7 +716,7 @@ a:hover, a:active {
   padding-left: 0;
 }
 
-/* line 13, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+/* line 18, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -721,60 +726,54 @@ a:hover, a:active {
   z-index: 99999;
 }
 
-/* line 21, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+/* line 26, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
 
-/* line 27, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+/* line 32, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
 
-/* line 33, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+/* line 38, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
 
-/* line 46, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+/* line 51, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
 
-/* line 52, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
-.main-navigation li {
-  float: left;
-  position: relative;
-}
-
-/* line 61, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+/* line 64, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
 /* Small menu. */
-/* line 74, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+/* line 77, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 80, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+  /* line 83, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
-  /* line 83, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+  /* line 86, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
 
-/* line 92, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+/* line 95, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -782,7 +781,7 @@ a:hover, a:active {
   overflow: hidden;
 }
 
-/* line 97, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+/* line 100, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -790,7 +789,7 @@ a:hover, a:active {
   width: 50%;
 }
 
-/* line 102, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
+/* line 105, /Applications/MAMP/htdocs/cercec/wp-content/themes/cercec-theme/sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
