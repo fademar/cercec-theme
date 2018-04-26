@@ -562,7 +562,8 @@ textarea {
 --------------------------------------------------------------*/
 .custom-logo {
   height: 70px;
-  width: 70px; }
+  width: 70px;
+  margin-bottom: 70px; }
 
 /*--------------------------------------------------------------
 ## Links
@@ -583,12 +584,6 @@ a {
 --------------------------------------------------------------*/
 .main-navigation {
   clear: both;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   width: 100%;
   height: 100%;
   padding-bottom: 60px; }
@@ -760,15 +755,14 @@ a {
   text-align: center; }
 
 .site-content {
-  padding: 20px 20px 60px 280px; }
+  padding: 20px 20px 100px 280px; }
 
 .site-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
-  padding-left: 250px;
-  background: #1f1a33; }
+  height: 100px;
+  padding: 20px 20px 20px 280px; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
