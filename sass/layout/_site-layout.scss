@@ -1,3 +1,7 @@
+.site {
+    height: 100%;
+}
+
 .site-header {
 	z-index: 800;
     background: #fff;
@@ -12,5 +16,14 @@
 }
 
 .site-content {
-	padding-left: 250px;
+	padding: 20px 20px 60px 280px;
+}
+
+.site-footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    padding-left: 250px;
+    background: #1f1a33;
 }
