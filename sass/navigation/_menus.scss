@@ -66,6 +66,12 @@
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 	}
+
+	.menu-top {
+		.menu-item {
+			margin-bottom: 10px;
+		}
+	}
 }
 
 /* Small menu. */
