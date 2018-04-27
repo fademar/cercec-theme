@@ -47,6 +47,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   src: url("fonts/raisonne/Raisonne-DemiBold.woff2") format("woff2"), url("fonts/raisonne/Raisonne-DemiBold.woff") format("woff"), url("fonts/raisonne/Raisonne-DemiBold.ttf") format("truetype"), url("fonts/raisonne/Raisonne-DemiBold.svg#Raisonne-DemiBold") format("svg"), url("fonts/raisonne/Raisonne-DemiBold.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("https://fonts.googleapis.com/css?family=Roboto");
+  font-weight: normal;
+  font-style: normal; }
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -359,7 +364,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -406,19 +411,35 @@ mark, ins {
 big {
   font-size: 125%; }
 
-.main-navigation {
+.main-navigation .menu-top {
   font-family: "Raisonne-DemiBold";
-  font-size: 1.2em; }
-  .main-navigation a,
-  .main-navigation a:visited {
+  font-size: 1em;
+  text-transform: uppercase; }
+  .main-navigation .menu-top a,
+  .main-navigation .menu-top a:visited {
     text-decoration: none;
     color: #000; }
-  .main-navigation a:hover,
-  .main-navigation a:focus,
-  .main-navigation a:active {
+  .main-navigation .menu-top a:hover,
+  .main-navigation .menu-top a:focus,
+  .main-navigation .menu-top a:active {
     text-decoration: none;
     color: #ea5425; }
-  .main-navigation .current_page_item a {
+  .main-navigation .menu-top .current_page_item a {
+    text-decoration: none;
+    color: #ea5425; }
+.main-navigation .menu-bottom {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em; }
+  .main-navigation .menu-bottom a,
+  .main-navigation .menu-bottom a:visited {
+    text-decoration: none;
+    color: #b2b2b2; }
+  .main-navigation .menu-bottom a:hover,
+  .main-navigation .menu-bottom a:focus,
+  .main-navigation .menu-bottom a:active {
+    text-decoration: none;
+    color: #ea5425; }
+  .main-navigation .menu-bottom .current_page_item a {
     text-decoration: none;
     color: #ea5425; }
 
@@ -565,6 +586,9 @@ textarea {
   width: 70px;
   margin-bottom: 70px; }
 
+.img-menu-deco {
+  width: 100px; }
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -624,6 +648,9 @@ a {
 
   .main-navigation ul {
     display: block; } }
+@media screen and (max-width: 37.5em) {
+  .img-menu-deco {
+    display: none; } }
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -743,6 +770,9 @@ a {
   height: 100%; }
 
 .site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 800;
   background: #fff;
   position: fixed;
@@ -764,6 +794,28 @@ a {
   height: 100px;
   padding: 20px 20px 20px 280px; }
 
+@media screen and (max-width: 37.5em) {
+  .site-header {
+    display: block;
+    z-index: 800;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15); }
+
+  .site-content {
+    padding: 20px 20px 100px 20px; }
+
+  .site-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px; } }
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
