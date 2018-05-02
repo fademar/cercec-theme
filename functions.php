@@ -124,6 +124,7 @@ add_action( 'widgets_init', 'cercec_theme_widgets_init' );
 function cercec_theme_scripts() {
 	
 	wp_enqueue_style( 'Bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' );
+	wp_enqueue_style( 'Fontawesome', 'https://use.fontawesome.com/releases/v5.0.10/css/all.css' );
 	wp_enqueue_style( 'cercec-theme-style', get_stylesheet_uri() );
 
 
